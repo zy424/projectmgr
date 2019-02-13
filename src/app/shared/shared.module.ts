@@ -6,6 +6,8 @@ import {MatToolbarModule,
         MatCardModule,
         MatFormFieldModule,
         MatInputModule,
+        MatListModule,
+        MatDividerModule
     } from '@angular/material';
 
 @NgModule({
@@ -18,6 +20,8 @@ import {MatToolbarModule,
       MatCardModule,
       MatFormFieldModule,
       MatInputModule,
+      MatListModule,
+      MatDividerModule,
   ],
   exports: [
     CommonModule,
@@ -27,6 +31,8 @@ import {MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatListModule,
+    MatDividerModule,
   ]
 })
 export class SharedModule { }
