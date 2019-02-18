@@ -1,0 +1,17 @@
+.project-card {
+  height: 360px;
+  margin: 10px;
+  flex: 0 0 360px;
+}
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fab-button {
+  position: fixed;
+  right: 32px;
+  bottom:96px;
+  z-index: 998;
+}
