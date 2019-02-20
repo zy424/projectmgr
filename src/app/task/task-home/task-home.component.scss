@@ -1,9 +1,3 @@
-.fab-button {
-  position: fixed;
-  right: 32px;
-  bottom:96px;
-  z-index: 998;
-}
 
 .task-lists {
   min-width: 100%;
@@ -18,4 +12,11 @@
   flex: 0 0 360px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.fab-button {
+  position: fixed;
+  right: 32px;
+  bottom:96px;
+  z-index: 998;
 }
