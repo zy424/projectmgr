@@ -22,7 +22,7 @@
     <mat-icon>mode_edit</mat-icon>
     <span>Edit List Name</span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onMoveAllClick()">
     <mat-icon [svgIcon]="'move'"></mat-icon>
     <span>Move List Content</span>
   </button>
