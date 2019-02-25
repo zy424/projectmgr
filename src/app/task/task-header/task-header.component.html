@@ -26,7 +26,7 @@
     <mat-icon [svgIcon]="'move'"></mat-icon>
     <span>Move List Content</span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onDeleteClick()">
     <mat-icon>delete_forever</mat-icon>
     <span>Delete List</span>
   </button>

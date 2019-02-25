@@ -1,6 +1,8 @@
 <app-project-item *ngFor = "let project of projects" [item]="project"
 class="project-card"
-(invite)="launchInvite()">
+(invite)="launchInvite()"
+(editItem)="openEditProjectDialog(item)"
+(deleteItem)="launchConfirmDialog()">
 
 </app-project-item>
 
