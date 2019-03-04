@@ -4,17 +4,14 @@
   </mat-list-item>
   <mat-divider></mat-divider>
   <h5 mat-subheader>Projects</h5>
-  <mat-list-item>
-    <mat-icon mat-list-icon color='primary'>list</mat-icon>
-    <span>To Do</span>
-    </mat-list-item>
-  <mat-list-item>
-    <mat-icon mat-list-icon color='primary'>exit_to_app</mat-icon>
-    <span>In Progress</span>
+  <mat-list-item [routerLink]="['/project']">
+    <mat-icon mat-list-icon color='primary' >list</mat-icon>
+    <span>Project List</span>
   </mat-list-item>
-  <mat-list-item>
-    <mat-icon mat-list-icon color='primary'>done</mat-icon>
-    <span>Done</span>
+  <h5 mat-subheader>Tasks</h5>
+  <mat-list-item [routerLink]="['/tasklists']">
+    <mat-icon mat-list-icon color='primary'>exit_to_app</mat-icon>
+    <span>Task List</span>
   </mat-list-item>
   <mat-divider></mat-divider>
   <h5 mat-subheader>Calender</h5>

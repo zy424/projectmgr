@@ -8,6 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
 import { MatIconRegistry} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
@@ -15,8 +16,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     SharedModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
   ],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent],
+  exports: [
+      HeaderComponent,
+      FooterComponent,
+      SidebarComponent,
+      BrowserAnimationsModule,
+      AppRoutingModule
+  ],
 })
 export class CoreModule {
   constructor (@Optional() @SkipSelf() parent: CoreModule,

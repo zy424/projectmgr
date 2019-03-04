@@ -1,12 +1,12 @@
 .project-card {
-  height: 360px;
+  max-height: 360px;
   margin: 10px;
   flex: 0 0 360px;
 }
-:host {
+.container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
 .fab-button {
