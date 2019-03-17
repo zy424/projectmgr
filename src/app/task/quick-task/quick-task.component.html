@@ -1,0 +1,31 @@
+<!--<form #f="ngForm" (ngSubmit)="onSubmit(f, $event)">-->
+  <!--<mat-form-field  class="full-width">-->
+    <!--<input matInput  type="text" placeholder="please generate a task here..."-->
+           <!--[(ngModel)]="desc"-->
+           <!--name="desc"-->
+           <!--required>-->
+    <!--<button matSuffix mat-icon-button type="submit" >-->
+      <!--<mat-icon>send</mat-icon>-->
+    <!--</button>-->
+    <!--<mat-error>Cannot be empty</mat-error>-->
+  <!--</mat-form-field>-->
+<!--</form>-->
+
+<!--<div>-->
+  <!--Form Data: {{f.value | json}}-->
+<!--</div>-->
+
+<!--<div>-->
+  <!--Form Validation: {{f.valid | json}}-->
+<!--</div>-->
+
+<mat-form-field  class="full-width">
+<input matInput  type="text" placeholder="please generate a task here..."
+       [(ngModel)]="desc"
+      >
+<button matSuffix mat-icon-button
+        type="button"
+        (click)="sendQuickTask()">
+  <mat-icon>send</mat-icon>
+</button>
+</mat-form-field>

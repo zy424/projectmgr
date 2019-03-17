@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
     MatToolbarModule,
     MatIconModule,
@@ -23,11 +24,14 @@ import {
     MatSidenavModule,
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import {DirectiveModule} from '../directive/directive.module';
 
 @NgModule({
   declarations: [ConfirmDialogComponent],
   imports: [
     CommonModule,
+      FormsModule,
+      ReactiveFormsModule,
       MatToolbarModule,
       MatIconModule,
       MatButtonModule,
@@ -48,9 +52,12 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
       MatRadioModule,
       MatSelectModule,
       MatSidenavModule,
+      DirectiveModule
   ],
   exports: [
     CommonModule,
+      FormsModule,
+      ReactiveFormsModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -71,6 +78,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
+    DirectiveModule
   ],
     entryComponents: [
         ConfirmDialogComponent,

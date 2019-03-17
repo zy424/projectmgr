@@ -20,6 +20,7 @@ export class TaskHomeComponent implements OnInit {
   lists = [
       {
         id: 1,
+        order: 1,
         name: 'To Do',
         tasks: [
           {
@@ -51,6 +52,7 @@ export class TaskHomeComponent implements OnInit {
       },
       {
           id: 2,
+          order: 2,
           name: 'In Progress',
           tasks: [
               {
@@ -111,4 +113,8 @@ export class TaskHomeComponent implements OnInit {
      const dialogRef = this.dialog.open(NewTaskListComponent,
          {data: {title: 'New list'}});
  }
+
+handleQuickTask(desc: string) {
+      console.log(desc);
+}
 }

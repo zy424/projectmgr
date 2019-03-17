@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SharedModule } from '../shared/shared.module';
+import { ServicesModule} from '../services/services.module';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
 import { MatIconRegistry} from '@angular/material';
@@ -16,6 +17,7 @@ import { AppRoutingModule } from '../app-routing.module';
     HttpClientModule,
     SharedModule,
     BrowserAnimationsModule,
+    ServicesModule.forRoot(),
     AppRoutingModule,
   ],
   exports: [
