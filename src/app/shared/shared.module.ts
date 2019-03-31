@@ -25,9 +25,10 @@ import {
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import {DirectiveModule} from '../directive/directive.module';
+import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
 
 @NgModule({
-  declarations: [ConfirmDialogComponent],
+  declarations: [ConfirmDialogComponent, ImageListSelectComponent],
   imports: [
     CommonModule,
       FormsModule,
@@ -56,8 +57,8 @@ import {DirectiveModule} from '../directive/directive.module';
   ],
   exports: [
     CommonModule,
-      FormsModule,
-      ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -78,7 +79,8 @@ import {DirectiveModule} from '../directive/directive.module';
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
-    DirectiveModule
+    DirectiveModule,
+    ImageListSelectComponent,
   ],
     entryComponents: [
         ConfirmDialogComponent,
