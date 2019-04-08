@@ -27,6 +27,15 @@ import { AppRoutingModule } from '../app-routing.module';
       BrowserAnimationsModule,
       AppRoutingModule
   ],
+    providers: [
+        {
+            provide: 'BASE_CONFIG',
+            useValue: {
+                uri: 'http://localhost:3000'
+                // uri: 'http://manage.t.imooc.io/apis',
+            }
+        }
+    ],
 })
 export class CoreModule {
   constructor (@Optional() @SkipSelf() parent: CoreModule,

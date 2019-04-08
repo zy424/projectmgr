@@ -26,13 +26,12 @@
         Quotes of the day
       </mat-card-title>
       <mat-card-subtitle>
-        When writing the story of your life, don't let anyone else hold the pen.
+        {{quote.cn}}
       </mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="/assets/quote_fallback.jpg">
+    <img mat-card-image [src]="quote.pic">
     <mat-card-content>
-      Work hard and play hard.
+      {{quote.en}}
     </mat-card-content>
   </mat-card>
 </form>
-
