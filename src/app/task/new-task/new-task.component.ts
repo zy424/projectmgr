@@ -30,4 +30,6 @@ export class NewTaskComponent implements OnInit {
       this.title = this.data.title;
   }
 
+  onClick() {
+  }
 }

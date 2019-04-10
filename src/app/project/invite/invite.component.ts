@@ -26,8 +26,12 @@ export class InviteComponent implements OnInit {
 
   ngOnInit() {
   }
+
   displayUser(user: {id: string; name: string}) {
     return user ? user.name : '';
+  }
+  onClick() {
+
   }
 
 }

@@ -10,6 +10,7 @@ import { loadSvgResources } from '../utils/svg.utils';
 import { MatIconRegistry} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../app-routing.module';
+import '../utils/debug.util';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
