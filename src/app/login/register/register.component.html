@@ -22,7 +22,8 @@
         [title]="'Select Avatar: '"
         [items]="items"
         formControlName="avatar"></app-image-list-select>
-      <button mat-raised-button  type="submit" >Register</button>
+      <app-age-input formControlName="dateBirth"></app-age-input>
+      <button mat-raised-button color="accent" type="submit" >Register</button>
     </mat-card-content>
     <mat-card-actions class="text-right">
       <p>No account?&nbsp;<a href="#">Login</a></p>

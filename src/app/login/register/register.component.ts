@@ -23,10 +23,16 @@ export class RegisterComponent implements OnInit {
             password: [],
             repeatPassword: [],
             avatar: [img],
+            dateBirth: ['1990-01-01'],
         }
     );
   }
   onSubmit({value, valid}, ev: Event) {
+      ev.preventDefault();
+      if (!valid) {
+          return;
+      }
+      console.log(value);
 
   }
 }

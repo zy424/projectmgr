@@ -22,13 +22,15 @@ import {
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
+    MatButtonToggleModule,
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import {DirectiveModule} from '../directive/directive.module';
 import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
+import { AgeInputComponent } from './age-input/age-input.component';
 
 @NgModule({
-  declarations: [ConfirmDialogComponent, ImageListSelectComponent],
+  declarations: [ConfirmDialogComponent, ImageListSelectComponent, AgeInputComponent],
   imports: [
     CommonModule,
       FormsModule,
@@ -53,7 +55,8 @@ import { ImageListSelectComponent } from './image-list-select/image-list-select.
       MatRadioModule,
       MatSelectModule,
       MatSidenavModule,
-      DirectiveModule
+      DirectiveModule,
+      MatButtonToggleModule,
   ],
   exports: [
     CommonModule,
@@ -81,6 +84,8 @@ import { ImageListSelectComponent } from './image-list-select/image-list-select.
     MatSidenavModule,
     DirectiveModule,
     ImageListSelectComponent,
+    AgeInputComponent,
+    MatButtonToggleModule,
   ],
     entryComponents: [
         ConfirmDialogComponent,
